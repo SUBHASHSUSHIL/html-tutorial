@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Table — HTML Tutorial</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container">
+        <a href="../index.html" class="back-link">&larr; Back to index</a>
+        <h1 id="top">Student Table</h1>
+
+        <div class="note">
+            A styled data table demonstrating <code>caption</code>,
+            <code>thead</code>, <code>tbody</code>, <code>tfoot</code>,
+            <code>colspan</code>, and embedded images.
+        </div>
+
+        <!-- The table element groups related data into rows and columns.
+             border, padding, and background are handled by the shared CSS. -->
+        <table>
+            <caption>List of Students</caption>
+
+            <thead>
+                <!-- colspan merges cells horizontally across columns -->
+                <tr>
+                    <th colspan="4">Delhi Public School &emsp;
+                        &#9993; dps@example.com</th>
+                </tr>
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Address</th>
+                    <th scope="col">Fees</th>
+                    <th scope="col">Photo</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Gagan</td>
+                    <td>Delhi</td>
+                    <td>70,000</td>
+                    <td>
+                        <img src="https://placehold.co/50x50?text=1"
+                            alt="Gagan" width="50" height="50">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Ram</td>
+                    <td>Uttar Pradesh</td>
+                    <td>34,000 &#8377;</td>
+                    <td>
+                        <img src="https://placehold.co/50x50?text=2"
+                            alt="Ram" width="50" height="50">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Shyam</td>
+                    <td>Delhi</td>
+                    <td>80,000</td>
+                    <td>
+                        <img src="https://placehold.co/50x50?text=3"
+                            alt="Shyam" width="50" height="50">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Mohan</td>
+                    <td>Delhi</td>
+                    <td>98,000</td>
+                    <td>
+                        <img src="https://placehold.co/50x50?text=4"
+                            alt="Mohan" width="50" height="50">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Geeta</td>
+                    <td>Madhya Pradesh</td>
+                    <td>70,000</td>
+                    <td>
+                        <img src="https://placehold.co/50x50?text=5"
+                            alt="Geeta" width="50" height="50">
+                    </td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <th colspan="4">
+                        &#9742; 874638756 &emsp;&emsp;
+                        Address: Noida, Sec-16 &emsp;&emsp;
+                        <a href="https://www.facebook.com">Facebook</a>
+                    </th>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page — HTML Tutorial</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container">
+        <a href="../index.html" class="back-link">&larr; Back to index</a>
+        <h1>Login Page</h1>
+
+        <div class="note">
+            A simple login and sign-up form laid out using an HTML table.
+            In production layouts you would typically use CSS grid or flexbox
+            instead of a table for form alignment.
+        </div>
+
+        <form>
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2">Login / Sign Up Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row"><label for="username">Username:</label></th>
+                        <td>
+                            <input type="text" id="username" size="40"
+                                placeholder="Enter username in capital letters">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><label for="password">Password:</label></th>
+                        <td>
+                            <input type="password" id="password" minlength="6">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th colspan="2">
+                            <input type="button" value="Login">
+                            <input type="button" value="New User? Sign Up">
+                        </th>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

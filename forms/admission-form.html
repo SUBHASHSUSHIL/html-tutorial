@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Form — HTML Tutorial</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container">
+        <a href="../index.html" class="back-link">&larr; Back to index</a>
+        <h1>Admission Form</h1>
+
+        <div class="note">
+            A comprehensive form demonstrating text inputs with validation patterns,
+            select dropdowns, optgroups, multiple selects, datalists, file uploads,
+            color picker, number, range, progress, and more.
+        </div>
+
+        <form>
+
+            <!-- Section 1: Student Information -->
+            <fieldset>
+                <legend>Student's Details</legend>
+
+                <label for="search">Search:</label>
+                <input type="search" id="search">
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" size="50" name="student-name"
+                    placeholder="Enter name in capital letters" required>
+
+                <label for="phone">Telephone:</label>
+                <input type="text" id="phone" size="10" pattern="[0-9]{8}"
+                    placeholder="Enter up to 8 digits">
+
+                <label for="address">Address:</label>
+                <input type="text" id="address" size="30" name="address"
+                    placeholder="Residential address" value="Delhi">
+
+                <label for="pincode">Pin Code:</label>
+                <input type="text" id="pincode" pattern="[0-9]{6}"
+                    placeholder="Enter digits only">
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" maxlength="10" minlength="6" required>
+
+                <!-- A single select dropdown: only one option can be chosen -->
+                <label for="state">State:</label>
+                <select id="state" name="state">
+                    <option>Delhi</option>
+                    <option>Mumbai</option>
+                    <option selected>Kolkata</option>
+                    <option>Chennai</option>
+                    <option>Uttar Pradesh</option>
+                    <option>Madhya Pradesh</option>
+                </select>
+
+                <!-- A multiple select: hold Ctrl (or Cmd) to choose more than one -->
+                <label for="city">City:</label>
+                <select id="city" name="city" multiple>
+                    <option>Ram Nagar</option>
+                    <option selected>Preet Vihar</option>
+                    <option>Noida</option>
+                    <option>Lucknow</option>
+                </select>
+
+                <!-- optgroup groups related options under a label -->
+                <label for="course">Course:</label>
+                <select id="course" name="course">
+                    <optgroup label="Commerce">
+                        <option>B.Com</option>
+                        <option>M.Com</option>
+                    </optgroup>
+                    <optgroup label="Science">
+                        <option>B.Tech</option>
+                        <option selected>M.Tech</option>
+                        <option>B.Sc</option>
+                    </optgroup>
+                    <optgroup label="Arts">
+                        <option>B.A</option>
+                        <option>M.A</option>
+                    </optgroup>
+                </select>
+
+                <!-- A datalist provides autocomplete suggestions while still
+                     allowing free text entry -->
+                <label for="favorite-color">Favorite Color:</label>
+                <input type="text" id="favorite-color" list="colors">
+                <datalist id="colors">
+                    <option value="red">
+                    <option value="orange">
+                    <option value="green">
+                    <option value="blue">The color of the sky
+                </datalist>
+
+                <label for="subject">Subsidiary Subject:</label>
+                <input type="text" id="subject" list="subjects">
+                <datalist id="subjects">
+                    <option value="English">
+                    <option value="Hindi">
+                    <option value="Physical Education">
+                </datalist>
+
+                <!-- Radio buttons with the same name form a single-choice group -->
+                <div class="radio-group">
+                    <span>Gender:</span>
+                    <label><input type="radio" name="gender" value="male" checked>Male</label>
+                    <label><input type="radio" name="gender" value="female">Female</label>
+                </div>
+
+                <!-- Checkboxes allow multiple selections -->
+                <div class="checkbox-group">
+                    <span>Hobby:</span>
+                    <label><input type="checkbox" name="hobby" value="sports">Sports</label>
+                    <label><input type="checkbox" name="hobby" value="dance" checked>Dance</label>
+                    <label><input type="checkbox" name="hobby" value="music">Music</label>
+                    <label><input type="checkbox" name="hobby" value="others">Others</label>
+                </div>
+            </fieldset>
+
+            <!-- Section 2: Official Information -->
+            <fieldset>
+                <legend>Official Information</legend>
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob">
+
+                <label for="tob">Time of Birth:</label>
+                <input type="time" id="tob">
+
+                <label for="dtob">Date &amp; Time:</label>
+                <input type="datetime-local" id="dtob">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="name@example.com">
+
+                <label for="month">Month:</label>
+                <input type="month" id="month">
+
+                <label for="week">Week:</label>
+                <input type="week" id="week">
+
+                <label for="website">URL:</label>
+                <input type="url" id="website" placeholder="https://example.com">
+
+                <label for="color">Choose Color:</label>
+                <input type="color" id="color">
+
+                <label for="age">Age:</label>
+                <input type="number" id="age" min="20" max="60" step="5">
+
+                <label for="file">Attach File:</label>
+                <input type="file" id="file" multiple>
+
+                <!-- disabled and readonly both prevent editing, but disabled
+                     fields are not submitted with the form -->
+                <label for="code-disabled">Code (disabled):</label>
+                <input type="text" id="code-disabled" disabled value="ADMIN-1234">
+
+                <label for="code-readonly">Code (read-only):</label>
+                <input type="text" id="code-readonly" readonly value="Confidential">
+
+                <label for="tel">Telephone:</label>
+                <input type="tel" id="tel" name="phone" pattern="[0-9]{3}-[0-5]{2}-[0-9]{4}"
+                    placeholder="e.g. 132-43-9812" required>
+
+                <label for="range">Range:</label>
+                <input type="range" id="range" min="20" max="100" value="60">
+
+                <!-- The progress element shows completion of a task -->
+                <label for="progress">Progress:</label>
+                <progress id="progress" min="0" max="100" value="85"></progress>
+
+                <label for="comments">Comments:</label>
+                <textarea id="comments" rows="3" cols="40" spellcheck="true"></textarea>
+
+                <!-- hidden inputs are not displayed but are submitted with the form -->
+                <input type="hidden" name="institution" value="example.com">
+
+                <div>
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Clear">
+                    <input type="button" value="Login">
+                    <button type="button">Use Me</button>
+                </div>
+            </fieldset>
+
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mailto Link — HTML Tutorial</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container">
+        <a href="../index.html" class="back-link">&larr; Back to index</a>
+        <h1>Mailto Link</h1>
+
+        <div class="note">
+            The <code>mailto:</code> URL scheme opens the visitor's default email
+            client with prefilled fields. You can set the recipient, CC, BCC,
+            subject, and body via query parameters.
+        </div>
+
+        <h2>What is a mailto link?</h2>
+        <p>
+            A mailto link is a type of HTML link that activates the default mail
+            client on the computer for sending an email. The web browser requires
+            a default email client application installed in order to activate the
+            email client.
+        </p>
+
+        <h2>Example</h2>
+        <p>
+            <a href="mailto:support@example.com?cc=admin@example.com&amp;bcc=manager@example.com&amp;subject=Important%20Notice&amp;body=Hello%2C%0A%0AThis%20is%20a%20test%20email%20from%20the%20HTML%20tutorial.">
+                Send your queries through email
+            </a>
+        </p>
+
+        <div class="note">
+            <strong>Tip:</strong> Spaces should be encoded as <code>%20</code> and
+            line breaks as <code>%0A</code> to ensure the email client parses the
+            URL correctly. The link will only work if the user has an email client
+            installed.
+        </div>
+    </div>
+</body>
+</html>

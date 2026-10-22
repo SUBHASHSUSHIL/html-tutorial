@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Types — HTML Tutorial</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container">
+        <a href="../index.html" class="back-link">&larr; Back to index</a>
+        <h1>List Types</h1>
+
+        <div class="note">
+            Demonstrates ordered lists, unordered lists, description lists,
+            and nested (multi-level) lists with various list-style types.
+        </div>
+
+        <!-- Ordered Lists -->
+        <h2>1. Ordered List</h2>
+        <p>The <code>type</code> attribute sets the numbering style: <code>1</code>, <code>a</code>, <code>A</code>, <code>i</code>, <code>I</code>.</p>
+
+        <p><strong>Default (1):</strong></p>
+        <ol>
+            <li>Garments</li>
+            <li>Footwears</li>
+            <li>Food Items</li>
+            <li>Electricals</li>
+            <li>Others</li>
+        </ol>
+
+        <p><strong>Type = a:</strong></p>
+        <ol type="a">
+            <li>Garments</li>
+            <li>Footwears</li>
+            <li>Food Items</li>
+            <li>Electricals</li>
+            <li>Others</li>
+        </ol>
+
+        <p><strong>Type = I:</strong></p>
+        <ol type="I">
+            <li>Garments</li>
+            <li>Footwears</li>
+            <li>Food Items</li>
+            <li>Electricals</li>
+            <li>Others</li>
+        </ol>
+
+        <p><strong>Reversed:</strong></p>
+        <ol reversed>
+            <li>Garments</li>
+            <li>Footwears</li>
+            <li>Food Items</li>
+            <li>Electricals</li>
+            <li>Others</li>
+        </ol>
+
+        <p><strong>Start = 3:</strong></p>
+        <ol start="3">
+            <li>Food Items</li>
+            <li>Electricals</li>
+            <li>Others</li>
+        </ol>
+
+        <!-- Unordered Lists -->
+        <h2>2. Unordered List</h2>
+        <p>The <code>type</code> attribute sets the bullet style: <code>disc</code>, <code>circle</code>, <code>square</code>, <code>none</code>.</p>
+
+        <p><strong>Default (disc):</strong></p>
+        <ul>
+            <li>Garments</li>
+            <li>Footwears</li>
+            <li>Food Items</li>
+            <li>Electricals</li>
+            <li>Others</li>
+        </ul>
+
+        <p><strong>Type = circle:</strong></p>
+        <ul type="circle">
+            <li>Garments</li>
+            <li>Footwears</li>
+            <li>Food Items</li>
+            <li>Electricals</li>
+            <li>Others</li>
+        </ul>
+
+        <p><strong>Type = square:</strong></p>
+        <ul type="square">
+            <li>Garments</li>
+            <li>Footwears</li>
+            <li>Food Items</li>
+            <li>Electricals</li>
+            <li>Others</li>
+        </ul>
+
+        <p><strong>Type = none:</strong></p>
+        <ul type="none">
+            <li>Garments</li>
+            <li>Footwears</li>
+            <li>Food Items</li>
+            <li>Electricals</li>
+            <li>Others</li>
+        </ul>
+
+        <!-- Description List -->
+        <h2>3. Description List</h2>
+        <p>A description list pairs terms (<code>dt</code>) with descriptions (<code>dd</code>).</p>
+        <dl>
+            <dt><strong>MBA</strong></dt>
+            <dd>Master of Business Administration</dd>
+            <dt><strong>MCA</strong></dt>
+            <dd>Master of Computer Applications</dd>
+            <dt><strong>CA</strong></dt>
+            <dd>Chartered Accountant</dd>
+        </dl>
+
+        <!-- Nested List -->
+        <h2>4. Nested List (Multi-Level)</h2>
+        <p>Nesting a list inside a list item creates a multi-level list.</p>
+        <ul type="square">
+            <li>
+                Garments
+                <ol>
+                    <li>Male</li>
+                    <li>Female</li>
+                    <li>Kids</li>
+                </ol>
+            </li>
+            <li>Footwears</li>
+            <li>Food Items</li>
+            <li>Electricals</li>
+            <li>Others</li>
+        </ul>
+    </div>
+</body>
+</html>
